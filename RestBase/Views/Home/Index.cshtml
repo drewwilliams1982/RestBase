@@ -1,0 +1,9 @@
+﻿@model IEnumerable<System.Security.Claims.Claim>
+
+<dl>
+    @foreach (var c in Model)
+    {
+        <dt>@c.Type</dt>
+        <dd>@c.Value</dd>
+    }
+</dl>
